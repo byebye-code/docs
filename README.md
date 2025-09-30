@@ -1,23 +1,35 @@
 ---
-description: Welcome to your team’s developer platform
+icon: hand-wave
 layout:
-  width: wide
+  width: default
   title:
-    visible: false
+    visible: true
   description:
     visible: false
   tableOfContents:
-    visible: false
+    visible: true
   outline:
-    visible: false
+    visible: true
   pagination:
-    visible: false
+    visible: true
   metadata:
     visible: true
 ---
 
-# Developer Platform
+# 欢迎！
 
-<h2 align="center">最稳定、最优惠的Claude Code 官方中转站</h2>
+欢迎各位佬友光临88code文档小站！
 
-<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><h4><i class="fa-book">:book:</i> 教程文档</h4></td><td align="center">88code教程文档</td><td></td><td><a href="https://app.gitbook.com/o/vLlx77Q3JcVeJU5DmIXu/s/UoZ2TptscxMqiEDmv6xV/">教程文档</a></td><td><a href=".gitbook/assets/no-code.jpg">no-code.jpg</a></td></tr><tr><td align="center"><h4><i class="fa-server">:server:</i> 更新日志</h4></td><td align="center">88code更新日志</td><td></td><td><a href="https://app.gitbook.com/o/vLlx77Q3JcVeJU5DmIXu/s/UoZ2TptscxMqiEDmv6xV/">教程文档</a></td><td><a href=".gitbook/assets/hosted.jpg">hosted.jpg</a></td></tr></tbody></table>
+有需要的可自行点击👇的文档查看！
+
+{% content-ref url="kuai-su-kai-shi/windows-shi-yong-jiao-cheng.md" %}
+[windows-shi-yong-jiao-cheng.md](kuai-su-kai-shi/windows-shi-yong-jiao-cheng.md)
+{% endcontent-ref %}
+
+{% content-ref url="kuai-su-kai-shi/macos-shi-yong-jiao-cheng.md" %}
+[macos-shi-yong-jiao-cheng.md](kuai-su-kai-shi/macos-shi-yong-jiao-cheng.md)
+{% endcontent-ref %}
+
+{% content-ref url="kuai-su-kai-shi/linuxwsl2-shi-yong-jiao-cheng.md" %}
+[linuxwsl2-shi-yong-jiao-cheng.md](kuai-su-kai-shi/linuxwsl2-shi-yong-jiao-cheng.md)
+{% endcontent-ref %}
