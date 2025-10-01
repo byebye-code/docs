@@ -1,8 +1,8 @@
 # Claude Code Windows使用指南
 
-## (一) 安装Node.js环境
+### (一) 安装Node.js环境
 
-### Windows安装方法
+#### Windows安装方法
 
 **方法一：官网下载（推荐）**
 
@@ -41,15 +41,15 @@ npm --version
 
 ***
 
-## (二) 安装 Claude Code
+### (二) 安装 Claude Code
 
-### 安装 Claude Code
+#### 安装 Claude Code
 
 打开 PowerShell 或 CMD，运行以下命令：
 
 ```powershell
 # 全局安装 Claude Code
-npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
+npm install -g @anthropic-ai/claude-code
 ```
 
 这个命令会从 npm 官方仓库下载并安装最新版本的 Claude Code。
@@ -69,37 +69,15 @@ claude --version
 
 如果显示版本号，恭喜你！Claude Code 已经成功安装了。
 
-### 更新 Claude Code
-
-运行
-
-```bash
-claude update
-```
-
 ***
 
-## (三) 配置 Claude Code
+### (三) 设置环境变量
 
-### 方法一（推荐）：通过文件设置
-
-编辑文件 `~/.claude/settings.json`，包含以下配置项
-
-```json
-{
-  "env": {
-      "ANTHROPIC_BASE_URL": "https://www.88code.org/api",
-      "ANTHROPIC_AUTH_TOKEN": "你的API Key"
-  },
-  "includeCoAuthoredBy": false
-}
-```
-
-### 方法二：通过环境变量设置
+#### 配置 Claude Code 环境变量
 
 为了让 Claude Code 连接到你的中转服务，需要设置两个环境变量：
 
-**PowerShell 临时设置（当前会话）**
+**方法一：PowerShell 临时设置（当前会话）**
 
 在 PowerShell 中运行以下命令：
 
@@ -108,10 +86,9 @@ $env:ANTHROPIC_BASE_URL = "https://www.88code.org/api"
 $env:ANTHROPIC_AUTH_TOKEN = "你的API密钥"
 ```
 
-> [!NOTE]
-> 记得将 "你的API密钥" 替换为在上方 "API Keys" 标签页中创建的实际密钥。
+<mark style="color:orange;">记得将 "你的API密钥" 替换为在上方 "API Keys" 标签页中创建的实际密钥。</mark>
 
-**PowerShell 永久设置（用户级）**
+**方法二：PowerShell 永久设置（用户级）**
 
 在 PowerShell 中运行以下命令设置用户级环境变量：
 
@@ -158,9 +135,31 @@ cr_xxxxxxxxxxxxxxxxxx
 
 <mark style="color:orange;">如果输出为空或显示变量名本身，说明环境变量设置失败，请重新设置。</mark>
 
+**方法三：设置settings.json**
+如果环境变量设置失败，可以采用方法三
+在.claude文件夹的settings.json文件中添加以下内容(如果没有settings.json文件，请自行创建，不需要时可随意删除，不影响claude使用)：
+
+<mark style="color:blue;">windows下路径为: C:\Users\你的用户名\.claude</mark>
+
+<mark style="color:blue;">Linux 或 macOS 系统中通常位于: ∼/.claude</mark>
+
+```json
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "你的API密钥",
+    "ANTHROPIC_BASE_URL": "https://www.88code.org/api",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "permissions": {
+    "allow": [],
+    "deny": []
+  }
+}
+```
+
 ***
 
-## (四) 开始使用 Claude Code
+### (四) 开始使用 Claude Code
 
 **现在你可以开始使用 Claude Code 了！**
 
@@ -181,7 +180,7 @@ claude
 
 ***
 
-## Windows 安装常见问题解决
+### Windows 安装常见问题解决
 
 **安装时提示 "permission denied" 错误**
 
