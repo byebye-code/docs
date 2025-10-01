@@ -1,0 +1,20 @@
+{
+  "name": "88code",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "88code",
+  "license": "ISC",
+  "description": "88code文档站",
+  "dependencies": {},
+  "overrides": {
+    "vite": "npm:rolldown-vite@latest"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs --open",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --open"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.12"
+  }
+}

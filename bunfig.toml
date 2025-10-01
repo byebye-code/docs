@@ -1,0 +1,6 @@
+[install]
+# 阿里淘宝源（稳定）
+registry = "https://registry.npmmirror.com"
+
+# 如想用腾讯云，换成 https://mirrors.cloud.tencent.com/npm/
+# 如想用华为云，换成 https://mirrors.huaweicloud.com/repository/npm/
