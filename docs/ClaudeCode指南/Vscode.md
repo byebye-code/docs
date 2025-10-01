@@ -6,7 +6,7 @@
 2. 在扩展中安装Claude Code for VS Code
 3. 在.claude文件夹的config.json文件中添加以下内容(如果没有config.json文件，请自行创建)：
 
-<mark style="color:blue;">windows下路径为: C:\Users\你的用户名\.claude</mark>
+<mark style="color:blue;">windows下路径为: C:/Users/你的用户名/.claude</mark>
 
 <mark style="color:blue;">Linux 或 macOS 系统中通常位于: ∼/.claude</mark>
 

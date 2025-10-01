@@ -8,7 +8,7 @@
 
 3. 到.codex文件夹下的**auth.json**和**config.toml**文件中添加以下内容(如果没有这两个文件，请自行创建)：
 
-<mark style="color:blue;">windows下路径为: C:\Users\你的用户名\.codex</mark>
+<mark style="color:blue;">windows下路径为: C:/Users/你的用户名/.codex</mark>
 
 <mark style="color:blue;">Linux 或 macOS 系统中通常位于: ∼/.codex</mark>
 
