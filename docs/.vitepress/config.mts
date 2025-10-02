@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/88code-docs',
+  base: '/docs',
   lang: 'zh-CN',
   title: "88code文档站",
   description: "88code救你于水深火热站",
