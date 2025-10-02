@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/docs',
   lang: 'zh-CN',
   title: "88code文档站",
   description: "88code救你于水深火热站",
@@ -14,7 +13,11 @@ export default defineConfig({
       { text: '桌面软件(占位)', link: 'https://github.com/byebye-code/88code-desktop' },
       { text: 'Claude Code 状态栏工具', link: 'https://github.com/byebye-code/CCometixLine' },
     ],
-
+    notFound: {
+      link: '/404',
+      linkLabel: '返回首页'
+    },
+    sidebarMenuLabel: '目录',
     sidebar: [
         {
           text: '88code站点介绍',
@@ -41,7 +44,7 @@ export default defineConfig({
         }, 
         {
           text: 'Codex指南',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: 'Windows', link: '/Codex指南/Windows' },
             { text: 'Linux', link: '/Codex指南/Linux' },
@@ -52,7 +55,7 @@ export default defineConfig({
         },
         {
           text: 'Gemini指南',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: 'Windows', link: '/Gemini指南/Windows' },
             { text: 'Linux', link: '/Gemini指南/Linux' },
@@ -63,29 +66,32 @@ export default defineConfig({
         },
         {
           text: '常见问题解答',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: '常见问题解答', link: '/FAQ/faq' },
           ]
         },
         {
           text: '88code套餐和计费说明',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: '88code套餐和计费说明', link: '/88code套餐和计费说明/说明' },
           ]
         },
         {
           text: '关于88code开源',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: '关于88code开源', link: '/关于88code开源/开源介绍' },
           ]
         }
       ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/byebye-code/' }
-    ]
+    ],
+    footer: {
+      message: 'Copyright © 2025-present 88code',
+      copyright: 'MIT Licensed | Copyright © 2025-present 88code'
+    }
   }
 })
