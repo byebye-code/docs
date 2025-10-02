@@ -50,15 +50,3 @@ linux/mac：export key88='你的API密钥'
 windows：$env:key88 = "你的API密钥"
 
 永久设置方法参考指南中windows，linux，max的设置方法。
-
-5. 回到 vscode 中
-按ctrl+shift+p 输入setting选择打开用户设置
-打开 vscode 的 **settings.json**加上以下内容：
-
-```json
-"chatgpt.apiBase": "https://88code.org/openai/v1",
-  "chatgpt.config": {
-    "preferred_auth_method":"apikey"
-  }
-```
-配置完成，重启vscode后畅享codex

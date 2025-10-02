@@ -1,5 +1,7 @@
 # Claude Code Vscode使用指南
 
+在阅读下列指南前，**请保证你已经按照对应系统配置好了 Claude Code Cli**并可以正常使用
+
 ## (一) Vscode安装(版本>=1.75.2)
 
 1. 访问 [Vscode官网](https://code.visualstudio.com/)下载所需版本
