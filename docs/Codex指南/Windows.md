@@ -67,43 +67,11 @@ codex --version
 
 #### 配置 Codex 环境变量
 
+
 1. <font color="red">方法一</font>
+## 使用cc switch 配置(强强强烈推荐!!!) 
+查看 [cc switch](../FAQ/CC_SWITCH)
 
-如果你使用支持 OpenAI API 的工具（如 Codex），需要设置以下环境变量：
-
-**PowerShell 设置方法**
-
-在 PowerShell 中运行以下命令：
-
-```powershell
-$env:OPENAI_BASE_URL = "https://www.88code.org/openai/v1"
-$env:OPENAI_API_KEY = "你的API密钥"
-```
-
-<mark style="background-color: #808080; color: #2d3436;">使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。</mark>
-
-**PowerShell 永久设置（用户级）**
-
-在 PowerShell 中运行以下命令：
-
-```powershell
-# 设置用户级环境变量（永久生效）
-[System.Environment]::SetEnvironmentVariable("OPENAI_BASE_URL", "https://www.88code.org/openai/v1", [System.EnvironmentVariableTarget]::User)
-[System.Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "你的API密钥", [System.EnvironmentVariableTarget]::User)
-```
-
-<mark style="background-color: #808080; color: #2d3436;">设置后需要重新打开 PowerShell 窗口才能生效。</mark>
-
-**验证 Codex 环境变量**
-
-在 PowerShell 中验证：
-
-```powershell
-echo $env:OPENAI_BASE_URL
-echo $env:OPENAI_API_KEY
-```
-
-***
 
 2. <font color="red">方法二</font>
 ### 使用一劳永逸的方式配置 Codex 环境变量(强烈推荐!!!)
@@ -248,6 +216,41 @@ network_access = true
 ```
 把88_xxx替换为你的88code的key即可
 
+
 3. <font color="red">方法三</font>
-使用cc switch 配置(强强强烈推荐!!!) 
-查看 [cc switch](../FAQ/CC_SWITCH)
+
+如果你使用支持 OpenAI API 的工具（如 Codex），需要设置以下环境变量：
+
+**PowerShell 设置方法**
+
+在 PowerShell 中运行以下命令：
+
+```powershell
+$env:OPENAI_BASE_URL = "https://www.88code.org/openai/v1"
+$env:OPENAI_API_KEY = "你的API密钥"
+```
+
+<mark style="background-color: #808080; color: #2d3436;">使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。</mark>
+
+**PowerShell 永久设置（用户级）**
+
+在 PowerShell 中运行以下命令：
+
+```powershell
+# 设置用户级环境变量（永久生效）
+[System.Environment]::SetEnvironmentVariable("OPENAI_BASE_URL", "https://www.88code.org/openai/v1", [System.EnvironmentVariableTarget]::User)
+[System.Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "你的API密钥", [System.EnvironmentVariableTarget]::User)
+```
+
+<mark style="background-color: #808080; color: #2d3436;">设置后需要重新打开 PowerShell 窗口才能生效。</mark>
+
+**验证 Codex 环境变量**
+
+在 PowerShell 中验证：
+
+```powershell
+echo $env:OPENAI_BASE_URL
+echo $env:OPENAI_API_KEY
+```
+
+***

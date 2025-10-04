@@ -14,6 +14,7 @@ CC SWITCH是一个用于图形化的Claude Code和Codex多配置文件管理和�
 GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion1231的付出!!
 
 ### 话不多说,我来教大家怎么使用CC SWITCH
+#### <font color="red">本教程Windows Mac Linux通用</font>
 1. 首先，确保你已经安装了CC SWITCH。可以在88code的下载页面找到它。
 打开: https://github.com/farion1231/cc-switch/releases/latest 滑到最后
 ![alt text](../图片/image1.png)
@@ -21,5 +22,65 @@ GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion123
 - 如果你是windows用户，点击`CC-Switch-Setup.msi`下载。
 - 如果是mac用户，点击`CC-Switch-macOS.zip`下载。
 - 如果是Debian或者Ubuntu桌面用户，点击`CC.Switch_3.4.0_amd64.deb`下载。
+- 如果是Arch Linux桌面用户，使用`yay cc-switch`命令安装即可。
+- 如果是其他Linux桌面用户，点击`CC.Switch_3.4.0_amd64.AppImage`下载。
+- 实在不方便的.
+也可以在群文件下载安装使用
+![alt text](../图片/image4.png)
+![alt text](../图片/image5.png)
+---
+3. 安装完成后
+打开cc switch,如图:
+![alt text](../图片/image3.png)
 
+4.<font color="red"> 配置Claude Code</font>
+![alt text](../图片/image6.png)
+点开Claude
+在图中箭头处粘贴下方的和88code密钥保存即可
+```json
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "88_xxx",
+    "ANTHROPIC_BASE_URL": "https://www.88code.org/api",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "permissions": {
+    "allow": [],
+    "deny": []
+  }
+}
+```
+<font color="red">务必把88_xxx替换为你自己的88code密钥</font>
+5. <font color="red">配置Codex</font>
+![alt text](../图片/image7.png)
+点开Codex
+在图中箭头处依次粘贴88code密钥和下方的配置保存即可
+##### auth.json
+```json
+{
+  "OPENAI_API_KEY": "88_xxxx"
+}
+```
+##### config.toml
+```toml
+experimental_use_rmcp_client = true
+model_provider = "88code"
+model = "gpt-5-codex"
+model_reasoning_effort = "high"
+disable_response_storage = true
+sandbox_mode = "workspace-write" 
 
+[model_providers.88code]
+name = "88code"
+base_url = "https://www.88code.org/openai/v1"
+```
+<font color="red">务必把88_xxx替换为你自己的88code密钥</font>
+
+6.选中自己想用的配置即可,保持其为使用中即可
+![alt text](../图片/image8.png)
+7. 我有多个key我该怎么用?
+![alt text](../图片/image9.png)
+![alt text](../图片/image10.png)
+按图片添加新的供应商即可哦!
+
+7.打完收工!哦耶!

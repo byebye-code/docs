@@ -80,7 +80,11 @@ claude update
 
 ## (三) 配置 Claude Code
 
-### 方法一（推荐）：通过文件设置
+### 方法一 (强强强烈推荐!!!) : 使用CC SWITCH进行配置
+使用cc switch 配置
+查看 [cc switch](../FAQ/CC_SWITCH)
+
+### 方法二（推荐）：通过文件设置
 
 编辑文件 `~/.claude/settings.json` 文件添加以下内容(如果没有settings.json文件，请自行创建，不需要时可随意删除，不影响claude使用)：
 
@@ -102,7 +106,7 @@ claude update
 }
 ```
 
-### 方法二：通过环境变量设置
+### 方法三：通过环境变量设置
 
 为了让 Claude Code 连接到你的中转服务，需要设置两个环境变量：
 
