@@ -23,17 +23,13 @@ export default defineConfig({
           text: '88code站点介绍',
           items: [
             { text: '介绍', link: '/88code站点介绍/介绍' },
-            { text: '回到主页', link: '/' },
-            { text: 'ClaudeCode指南', link: '/ClaudeCode指南/Windows' },
-            { text: 'Codex指南', link: '/Codex指南/Windows' },
-            { text: 'Gemini指南', link: '/Gemini指南/Windows' },
             { text: '常见问题解答', link: '/FAQ/faq' },
             { text: '88code套餐和计费说明', link: '/88code套餐和计费说明/说明' },
             { text: '关于88code开源', link: '/关于88code开源/开源介绍' }
           ]
         },
         {
-          text: 'ClaudeCode指南',
+          text: 'ClaudeCode使用教程',
           collapsed: false,
           items: [
             { text: 'Windows', link: '/ClaudeCode指南/Windows' },
@@ -43,7 +39,7 @@ export default defineConfig({
           ]
         }, 
         {
-          text: 'Codex指南',
+          text: 'Codex使用教程',
           collapsed: true,
           items: [
             { text: 'Windows', link: '/Codex指南/Windows' },
@@ -54,7 +50,7 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Gemini指南',
+          text: 'Gemini使用教程',
           collapsed: true,
           items: [
             { text: 'Windows', link: '/Gemini指南/Windows' },
@@ -69,13 +65,6 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '常见问题解答', link: '/FAQ/faq' },
-          ]
-        },
-        {
-          text: '88code套餐和计费说明',
-          collapsed: true,
-          items: [
-            { text: '88code套餐和计费说明', link: '/88code套餐和计费说明/说明' },
           ]
         },
         {
