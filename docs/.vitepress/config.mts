@@ -13,6 +13,10 @@ export default defineConfig({
       { text: '桌面软件(占位)', link: 'https://github.com/byebye-code/88code-desktop' },
       { text: 'Claude Code 状态栏工具', link: 'https://github.com/byebye-code/CCometixLine' },
     ],
+     outline: {
+      level: [1, 5], // 提取从 H2 到 H5 的标题
+      label: '本页目录' // 自定义目录标题
+    },
     notFound: {
       link: '/404',
       linkLabel: '返回首页'
