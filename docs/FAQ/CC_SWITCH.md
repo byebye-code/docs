@@ -76,12 +76,14 @@ base_url = "https://www.88code.org/openai/v1"
 ```
 <font color="red">务必把88_xxx替换为你自己的88code密钥</font>
 
-6.选中自己想用的配置即可,保持其为使用中即可
+6. 选中自己想用的配置即可,保持其为使用中即可
 ![alt text](../图片/image8.png)
+
 7. 我有多个key我该怎么用?
 ![alt text](../图片/image9.png)
 ![alt text](../图片/image10.png)
 按图片添加新的供应商即可哦!
+
 8. 我想在VSCode中使用怎么办?
 点击图中应用到Claude插件即可,Codex也一样
 ![alt text](../图片/image11.png)
