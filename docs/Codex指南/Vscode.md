@@ -16,7 +16,7 @@
 
 ```json
 {
-  "OPENAI_API_KEY": "公益key"
+  "OPENAI_API_KEY": "key"
 }
 ```
 

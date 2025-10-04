@@ -41,19 +41,28 @@ npm --version
 
 ***
 
-### (二) 安装 Claude Code
+### (二) 安装 Codex Cli
 
-#### 安装 Claude Code
+#### 安装 Codex Cli
 
 打开 PowerShell 或 CMD，运行以下命令：
 
 ```powershell
-# 全局安装 Claude Code
-npm install -g @anthropic-ai/claude-code
+# 全局安装 Codex Cli
+npm install -g @openai/codex
 ```
 
 这个命令会从 npm 官方仓库下载并安装最新版本的 Claude Code。
 
+#### 验证
+```powershell
+codex --version
+```
+
+#### 如果国内下载慢，可用
+```powershell
+npm i -g @openai/codex --registry=https://registry.npmmirror.com
+```
 **提示**
 
 - 建议使用 PowerShell 而不是 CMD，功能更强大
