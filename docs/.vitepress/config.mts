@@ -65,6 +65,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '常见问题解答', link: '/FAQ/faq' },
+            { text: 'CC SWITCH使用教程', link: '/FAQ/CC_SWITCH' },
           ]
         },
         {

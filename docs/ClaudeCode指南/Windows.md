@@ -46,13 +46,12 @@ npm --version
 ### 安装 Claude Code
 
 打开 PowerShell 或 CMD，运行以下命令：
-
+##### 全局安装 Claude Code
 ```powershell
-# 全局安装 Claude Code
 npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
 ```
 
-这个命令会从 npm 官方仓库下载并安装最新版本的 Claude Code。
+这个命令会从 npm 官方仓库下载并安装最新版本的 Claude Code。<font color="red">更新也使用这个命令</font>
 
 **提示**
 
@@ -85,9 +84,9 @@ claude update
 
 编辑文件 `~/.claude/settings.json` 文件添加以下内容(如果没有settings.json文件，请自行创建，不需要时可随意删除，不影响claude使用)：
 
-<mark style="color:blue;">windows下路径为: C:/Users/你的用户名/.claude</mark>
+<mark style="background-color: #808080; color: #2d3436;">windows下路径为: C:/Users/你的用户名/.claude</mark>
 
-<mark style="color:blue;">Linux 或 macOS 系统中通常位于: ∼/.claude</mark>
+<mark style="background-color: #808080; color: #2d3436;">Linux 或 macOS 系统中通常位于: ∼/.claude</mark>
 
 ```json
 {
@@ -137,7 +136,7 @@ $env:ANTHROPIC_AUTH_TOKEN = "你的API密钥"
 [System.Environment]::GetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", [System.EnvironmentVariableTarget]::User)
 ```
 
-<mark style="color:orange;">设置后需要重新打开 PowerShell 窗口才能生效。</mark>
+<mark style="background-color: #808080; color: #2d3436;">设置后需要重新打开 PowerShell 窗口才能生效。</mark>
 
 **验证环境变量设置**
 
@@ -164,7 +163,7 @@ https://www.88code.org/api
 cr_xxxxxxxxxxxxxxxxxx
 ```
 
-<mark style="color:orange;">如果输出为空或显示变量名本身，说明环境变量设置失败，请重新设置。</mark>
+<mark style="background-color: #808080; color: #2d3436;">如果输出为空或显示变量名本身，说明环境变量设置失败，请重新设置。</mark>
 
 ***
 

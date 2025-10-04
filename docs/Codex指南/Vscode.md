@@ -8,9 +8,9 @@
 
 3. 到.codex文件夹下的**auth.json**和**config.toml**文件中添加以下内容(如果没有这两个文件，请自行创建)：
 
-<mark style="color:blue;">windows下路径为: C:/Users/你的用户名/.codex</mark>
+<mark style="background-color: #808080; color: #2d3436;">windows下路径为: C:/Users/你的用户名/.codex</mark>
 
-<mark style="color:blue;">Linux 或 macOS 系统中通常位于: ∼/.codex</mark>
+<mark style="background-color: #808080; color: #2d3436;">Linux 或 macOS 系统中通常位于: ∼/.codex</mark>
 
 **auth.json**
 
@@ -37,11 +37,11 @@ env_key = "key88"
 requires_openai_auth = true   
 ```
 
-<mark style="color:blue;">注意:  env-Key只能是环境变量中的名称，不能放完整的令牌(密钥)，令牌要放到环境变量中</mark>
+<mark style="background-color: #808080; color: #2d3436;">注意:  env-Key只能是环境变量中的名称，不能放完整的令牌(密钥)，令牌要放到环境变量中</mark>
 
-<mark style="color:blue;">如果你放了完整的令牌(密钥)使用时会报错找不到令牌或者令牌配置错误(见常见问题)</mark>
+<mark style="background-color: #808080; color: #2d3436;">如果你放了完整的令牌(密钥)使用时会报错找不到令牌或者令牌配置错误(见常见问题)</mark>
 
-<mark style="color:blue;">requires_openai_auth = true,可以让你在插件中切换模型</mark>
+<mark style="background-color: #808080; color: #2d3436;">requires_openai_auth = true,可以让你在插件中切换模型</mark>
 
 4. 在你的环境变量中设置key88="你的API密钥" :
 
