@@ -17,7 +17,7 @@ hero:
       text: Codex 指南
       link: /Codex指南/Windows
     - theme: alt
-      text: Gemini 指南(占位)
+      text: Gemini 指南
       link: /Gemini指南/Windows
     - theme: alt
       text: FAQ
@@ -25,6 +25,9 @@ hero:
     - theme: alt
       text: 88code 套餐和计费说明
       link: /88code套餐和计费说明/说明
+    - theme: alt
+      text: 88code 更新日志
+      link: /88code站点介绍/更新日志
     - theme: alt
       text: 关于88code开源
       link: /关于88code开源/开源介绍

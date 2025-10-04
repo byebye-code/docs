@@ -30,7 +30,9 @@ export default defineConfig({
             { text: '介绍', link: '/88code站点介绍/介绍' },
             { text: '常见问题解答', link: '/FAQ/faq' },
             { text: '88code套餐和计费说明', link: '/88code套餐和计费说明/说明' },
-            { text: '关于88code开源', link: '/关于88code开源/开源介绍' }
+            { text: '88code更新日志', link: '/88code站点介绍/更新日志' },
+            { text: '关于88code开源', link: '/关于88code开源/开源介绍' },
+            { text: 'cc switch使用教程', link: '/FAQ/CC_SWITCH' }
           ]
         },
         {
@@ -41,6 +43,7 @@ export default defineConfig({
             { text: 'Linux', link: '/ClaudeCode指南/Linux' },
             { text: 'Mac', link: '/ClaudeCode指南/Mac' },
             { text: 'Vscode', link: '/ClaudeCode指南/Vscode' },
+            { text: 'KiloRooCode', link: '/ClaudeCode指南/KiloRooCode' },
           ]
         }, 
         {
