@@ -1,11 +1,11 @@
 # 常见问题
 
 ## claude code常见问题
-1. 后台账号额度限制
+1. 官方负载过高
 ```
-500 {"error":{"code":400,"type":"server_error","message":"There's currently no account supporting this model"},"type":"error"}
+API Error: 400 {"error":{"type":"invalid_request_error","message":"Overloaded"},"type":"error"}
 ```
-解决办法：等待加号。
+解决办法：重试即可。
 
 
 ## codex常见问题
