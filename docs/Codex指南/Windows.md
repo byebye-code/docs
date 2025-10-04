@@ -69,7 +69,7 @@ codex --version
 
 
 1. <font color="red">方法一</font>
-## 使用cc switch 配置(强强强烈推荐!!!) 
+### 使用cc switch 配置(强强强烈推荐!!!) 
 查看 [cc switch](../FAQ/CC_SWITCH)
 
 
