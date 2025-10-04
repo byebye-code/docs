@@ -23,7 +23,7 @@ hero:
       text: FAQ
       link: /FAQ/faq
     - theme: alt
-      text: 88code 套餐和计费说明
+      text: 88code 套餐
       link: /88code套餐和计费说明/说明
     - theme: alt
       text: 88code 更新日志
