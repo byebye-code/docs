@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: "88code文档站",
   description: "88code救你于水深火热站",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -86,6 +87,9 @@ export default defineConfig({
     footer: {
       message: 'Copyright © 2025-present 88code',
       copyright: 'MIT Licensed | Copyright © 2025-present 88code'
+    },
+    search: {
+      provider: 'local'
     }
   }
 })
