@@ -80,6 +80,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '关于88开源', link: '/88-opensource/introduction' },
+            { text: '关于88开源', link: '/88-opensource/byebyecode' },
           ]
         }
       ],
