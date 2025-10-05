@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: '官网', link: 'https://www.88code.org/' },
       { text: 'Vscode插件', link: 'https://github.com/byebye-code/vscode-extension' },
-      { text: '桌面软件', link: 'https://github.com/byebye-code/88code-desktop' },
+      { text: '一键自动配置桌面端', link: 'https://github.com/byebye-code/88code-desktop' },
       { text: 'Claude Code 状态栏工具', link: 'https://github.com/byebye-code/byebyecode' },
     ],
      outline: {
