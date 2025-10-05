@@ -9,28 +9,28 @@ hero:
   actions:
     - theme: brand
       text: 88code站点介绍
-      link: /88code站点介绍/介绍
+      link: /88code/introduction
     - theme: alt
-      text: Claude Code 指南
-      link: /ClaudeCode指南/Windows
+      text: Claude Code 教程
+      link: /ClaudeCode/Windows
     - theme: alt
-      text: Codex 指南
-      link: /Codex指南/Windows
+      text: Codex 教程
+      link: /Codex/Windows
     - theme: alt
-      text: Gemini 指南
-      link: /Gemini指南/Windows
+      text: Gemini 教程
+      link: /Gemini/Windows
     - theme: alt
       text: FAQ
       link: /FAQ/faq
     - theme: alt
       text: 88code 套餐
-      link: /88code套餐和计费说明/说明
+      link: /88code/pricing
     - theme: alt
       text: 88code 更新日志
-      link: /88code站点介绍/更新日志
+      link: /88code/release-log
     - theme: alt
-      text: 关于88code开源
-      link: /关于88code开源/开源介绍
+      text: 关于88开源
+      link: /88code-opensource/introduction
 
 
 features:
