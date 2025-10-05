@@ -27,45 +27,44 @@ export default defineConfig({
         {
           text: '88code站点介绍',
           items: [
-            { text: '介绍', link: '/88code站点介绍/介绍' },
+            { text: '介绍', link: '/88code/introduction' },
             { text: '常见问题解答', link: '/FAQ/faq' },
-            { text: '88code套餐和计费说明', link: '/88code套餐和计费说明/说明' },
-            { text: '88code更新日志', link: '/88code站点介绍/更新日志' },
-            { text: '关于88code开源', link: '/关于88code开源/开源介绍' },
-            { text: 'cc switch使用教程', link: '/FAQ/CC_SWITCH' }
+            { text: '套餐和计费说明', link: '/88code/pricing' },
+            { text: '更新日志', link: '/88code/release-log' },
+            { text: '关于88开源', link: '/88-opensource/introduction' },
           ]
         },
         {
           text: 'ClaudeCode使用教程',
           collapsed: false,
           items: [
-            { text: 'Windows', link: '/ClaudeCode指南/Windows' },
-            { text: 'Linux', link: '/ClaudeCode指南/Linux' },
-            { text: 'Mac', link: '/ClaudeCode指南/Mac' },
-            { text: 'Vscode', link: '/ClaudeCode指南/Vscode' },
-            { text: 'KiloRooCode', link: '/ClaudeCode指南/KiloRooCode' },
+            { text: 'Windows', link: '/ClaudeCode/Windows' },
+            { text: 'Linux', link: '/ClaudeCode/Linux' },
+            { text: 'Mac', link: '/ClaudeCode/Mac' },
+            { text: 'Vscode', link: '/ClaudeCode/Vscode' },
+            { text: 'KiloRooCode', link: '/ClaudeCode/KiloRooCode' },
           ]
         }, 
         {
           text: 'Codex使用教程',
           collapsed: true,
           items: [
-            { text: 'Windows', link: '/Codex指南/Windows' },
-            { text: 'Linux', link: '/Codex指南/Linux' },
-            { text: 'Mac', link: '/Codex指南/Mac' },
-            { text: 'Vscode', link: '/Codex指南/Vscode' },
-            { text: 'Jetbrains', link: '/Codex指南/Jetbrains' },
+            { text: 'Windows', link: '/Codex/Windows' },
+            { text: 'Linux', link: '/Codex/Linux' },
+            { text: 'Mac', link: '/Codex/Mac' },
+            { text: 'Vscode', link: '/Codex/Vscode' },
+            { text: 'Jetbrains', link: '/Codex/Jetbrains' },
           ]
         },
         {
           text: 'Gemini使用教程',
           collapsed: true,
           items: [
-            { text: 'Windows', link: '/Gemini指南/Windows' },
-            { text: 'Linux', link: '/Gemini指南/Linux' },
-            { text: 'Mac', link: '/Gemini指南/Mac' },
-            { text: 'Vscode', link: '/Gemini指南/Vscode' },
-            { text: 'Jetbrains', link: '/Gemini指南/Jetbrains' },
+            { text: 'Windows', link: '/Gemini/Windows' },
+            { text: 'Linux', link: '/Gemini/Linux' },
+            { text: 'Mac', link: '/Gemini/Mac' },
+            { text: 'Vscode', link: '/Gemini/Vscode' },
+            { text: 'Jetbrains', link: '/Gemini/Jetbrains' },
           ]
         },
         {
@@ -77,10 +76,10 @@ export default defineConfig({
           ]
         },
         {
-          text: '关于88code开源',
+          text: '88开源',
           collapsed: true,
           items: [
-            { text: '关于88code开源', link: '/关于88code开源/开源介绍' },
+            { text: '关于88开源', link: '/88-opensource/introduction' },
           ]
         }
       ],
