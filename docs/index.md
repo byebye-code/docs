@@ -30,7 +30,7 @@ hero:
       link: /88code/release-log
     - theme: alt
       text: 关于88开源
-      link: /88code-opensource/introduction
+      link: /88-opensource/introduction
 
 
 features:
