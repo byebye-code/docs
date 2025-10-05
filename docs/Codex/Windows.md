@@ -76,7 +76,7 @@ codex --version
 2. <font color="red">方法二</font>
 ### 使用一劳永逸的方式配置 Codex 环境变量(强烈推荐!!!)
 - 打开文件资源管理器，找到 `C:\Users\你的用户名\.codex` 文件夹（如果没有则创建）
-如图: ![目录](../图片/image2.png)
+如图: ![目录](../img/image2.png)
 创建`config.toml`,用Notepad打开，输入以下内容：
 ```toml
 experimental_use_rmcp_client = true

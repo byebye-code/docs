@@ -17,7 +17,7 @@ GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion123
 #### <font color="red">本教程Windows Mac Linux通用</font>
 1. 首先，确保你已经安装了CC SWITCH。可以在88code的下载页面找到它。
 打开: https://github.com/farion1231/cc-switch/releases/latest 滑到最后
-![alt text](../图片/image1.png)
+![alt text](../img/image1.png)
 2. 下载最新版本的CC SWITCH安装包，文件名通常是类似于`CC-Switch-Setup.msi`的格式。
 - 如果你是windows用户，点击`CC-Switch-Setup.msi`下载。
 - 如果是mac用户，点击`CC-Switch-macOS.zip`下载。
@@ -26,15 +26,15 @@ GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion123
 - 如果是其他Linux桌面用户，点击`CC.Switch_3.4.0_amd64.AppImage`下载。
 - 实在不方便的.
 也可以在群文件下载安装使用
-![alt text](../图片/image4.png)
-![alt text](../图片/image5.png)
+![alt text](../img/image4.png)
+![alt text](../img/image5.png)
 ---
 3. 安装完成后
 打开cc switch,如图:
-![alt text](../图片/image3.png)
+![alt text](../img/image3.png)
 
 4.<font color="red"> 配置Claude Code</font>
-![alt text](../图片/image6.png)
+![alt text](../img/image6.png)
 点开Claude
 在图中箭头处粘贴下方的和88code密钥保存即可
 ```json
@@ -52,7 +52,7 @@ GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion123
 ```
 <font color="red">务必把88_xxx替换为你自己的88code密钥</font>
 5. <font color="red">配置Codex</font>
-![alt text](../图片/image7.png)
+![alt text](../img/image7.png)
 点开Codex
 在图中箭头处依次粘贴88code密钥和下方的配置保存即可
 ##### auth.json
@@ -77,15 +77,15 @@ base_url = "https://www.88code.org/openai/v1"
 <font color="red">务必把88_xxx替换为你自己的88code密钥</font>
 
 6. 选中自己想用的配置即可,保持其为使用中即可
-![alt text](../图片/image8.png)
+![alt text](../img/image8.png)
 
 7. 我有多个key我该怎么用?
-![alt text](../图片/image9.png)
-![alt text](../图片/image10.png)
-按图片添加新的供应商即可哦!
+![alt text](../img/image9.png)
+![alt text](../img/image10.png)
+按img添加新的供应商即可哦!
 
 8. 我想在VSCode中使用怎么办?
 点击图中应用到Claude插件即可,Codex也一样
-![alt text](../图片/image11.png)
+![alt text](../img/image11.png)
 
 9. 打完收工!哦耶!
