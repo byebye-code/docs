@@ -68,7 +68,10 @@ model_provider = "88code"
 model = "gpt-5-codex"
 model_reasoning_effort = "high"
 disable_response_storage = true
-sandbox_mode = "workspace-write" 
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = true
 
 [model_providers.88code]
 name = "88code"
