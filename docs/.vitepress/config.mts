@@ -30,6 +30,7 @@ export default defineConfig({
             { text: '介绍', link: '/88code/introduction' },
             { text: '常见问题解答', link: '/FAQ/faq' },
             { text: '套餐和计费说明', link: '/88code/pricing' },
+            { text: '详细计费规则', link: '/88code/credit-rules' },
             { text: '更新日志', link: '/88code/release-log' },
             { text: '关于88开源', link: '/88-opensource/introduction' },
           ]
