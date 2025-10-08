@@ -1,10 +1,4 @@
 {
   "recommendations": [
-    "vue.volar",                 // Vue 官方插件
-    "ms-vscode.vscode-typescript-next", // TS 支持
-    "esbenp.prettier-vscode",    // Prettier
-    "fantasy.vp-preview", // vp预览用
-    "zhoucheng0431.vitepress-snippets", //vp 片段补全complete
-    "bradlc.vscode-tailwindcss"  // Tailwind CSS
   ]
 }
