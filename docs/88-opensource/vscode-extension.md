@@ -1,4 +1,4 @@
-# VSCode 状态栏显示插件
+# VSCode 状态栏插件
 
 [仓库](https://github.com/byebye-code/88code-status-vscode-extension)
 

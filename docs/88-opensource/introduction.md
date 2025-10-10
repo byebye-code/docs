@@ -1,10 +1,11 @@
 # 关于88code开源
+
 你好！欢迎来到这个页面！
 我们的开源仓库有
 分别是
 
 - [vscode-extension](https://github.com/byebye-code/vscode-extension) 这是我们的vscode插件仓库
-- [88code-status-vscode-extension](https://github.com/byebye-code/88code-status-vscode-extension)    或者使用VSCode插件简洁版
+- [88code-status-vscode-extension](./vscode-extension.md)    或者使用VSCode插件简洁版
 - [88code-desktop](https://github.com/byebye-code/88code-desktop)   这是我们的桌面版仓库
 - [byebyecode](https://github.com/byebye-code/byebyecode)    这是我们的状态栏工具仓库
 

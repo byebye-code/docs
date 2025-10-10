@@ -10,9 +10,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '官网', link: 'https://www.88code.org/' },
-      { text: 'Vscode插件', link: 'https://github.com/byebye-code/vscode-extension' },
       { text: '一键自动配置桌面端', link: 'https://github.com/byebye-code/88code-desktop' },
-      { text: 'Claude Code 状态栏工具', link: 'https://github.com/byebye-code/byebyecode' },
+      { text: '辅助工具', link: '/88-opensource/introduction' },
     ],
      outline: {
       level: [1, 5], // 提取从 H2 到 H5 的标题
@@ -82,6 +81,7 @@ export default defineConfig({
           items: [
             { text: '关于88开源', link: '/88-opensource/introduction' },
             { text: 'byebyecode体验教程', link: '/88-opensource/byebyecode' },
+            { text: 'VSCode状态栏插件', link: '/88-opensource/vscode-extension' },
           ]
         }
       ],
