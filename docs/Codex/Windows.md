@@ -217,7 +217,9 @@ network_access = true
 ```
 把88_xxx替换为你的88code的key即可
 设置环境变量
+```powershell
 [System.Environment]::SetEnvironmentVariable("key88", "你的API密钥", [System.EnvironmentVariableTarget]::User)
+```
 
 3. <font color="red">方法三</font>
 
