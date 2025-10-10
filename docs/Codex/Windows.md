@@ -234,7 +234,7 @@ $env:OPENAI_BASE_URL = "https://88code.org/openai/v1"
 $env:OPENAI_API_KEY = "你的API密钥"
 ```
 
-<mark style="background-color: #808080; color: #2d3436;">使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。</mark>
+<mark style="background-color: #808080; color: #2d3436;">使用你的 88code API 密钥，格式如 88_xxxxxxxxxx, 使用与 Claude Code 相同的 API 密钥即可。</mark>
 
 **PowerShell 永久设置（用户级）**
 
@@ -256,5 +256,112 @@ $env:OPENAI_API_KEY = "你的API密钥"
 echo $env:OPENAI_BASE_URL
 echo $env:OPENAI_API_KEY
 ```
+
+***
+
+### (三) 开始使用 Codex
+
+#### 启动 Codex
+
+配置完成后，在 PowerShell 或 CMD 中输入以下命令启动 Codex：
+
+```powershell
+codex
+```
+
+首次启动时，Codex 会进行初始化配置。
+
+#### 基本使用
+
+- **交互模式**：直接输入 `codex` 进入交互式对话
+- **指定项目**：在项目目录下运行 `codex`，Codex 会自动识别项目上下文
+- **退出程序**：输入 `exit` 或按 `Ctrl+C` 退出
+
+***
+
+### (四) 常见问题解决
+
+#### 1. 命令未找到错误
+
+**问题**：运行 `codex` 时提示 "不是内部或外部命令"
+
+**解决方法**：
+```powershell
+# 检查 npm 全局安装路径
+npm config get prefix
+
+# 确保该路径在 PATH 中
+$env:Path
+
+# 如果不在，添加到系统环境变量
+# 打开系统环境变量设置，将 npm 全局路径添加到 Path 中
+# 默认路径通常是：C:\Users\你的用户名\AppData\Roaming\npm
+```
+
+#### 2. 权限问题
+
+**问题**：安装时提示权限不足
+
+**解决方法**：
+```powershell
+# 以管理员身份运行 PowerShell
+# 右键点击 PowerShell 图标，选择"以管理员身份运行"
+
+# 然后重新安装
+npm install -g @openai/codex
+```
+
+#### 3. API 连接失败
+
+**问题**：Codex 无法连接到 API 服务
+
+**解决方法**：
+```powershell
+# 检查环境变量是否正确设置
+echo $env:OPENAI_BASE_URL
+echo $env:OPENAI_API_KEY
+
+# 测试网络连接
+Test-NetConnection -ComputerName 88code.org -Port 443
+
+# 重新设置环境变量
+$env:OPENAI_BASE_URL = "https://88code.org/openai/v1"
+$env:OPENAI_API_KEY = "你的API密钥"
+```
+
+#### 4. 更新 Codex
+
+**问题**：如何更新到最新版本
+
+**解决方法**：
+```powershell
+# 更新 Codex（推荐使用国内镜像）
+npm i -g @openai/codex --registry=https://registry.npmmirror.com
+
+# 或者重新安装
+npm install -g @openai/codex
+```
+
+#### 5. Node.js 版本过低
+
+**问题**：提示 Node.js 版本不兼容
+
+**解决方法**：
+```powershell
+# 检查当前版本
+node --version
+
+# 从官网下载最新的 LTS 版本（需要 18 或更高版本）
+# 访问 https://nodejs.org/ 下载安装
+```
+
+#### 6. 防火墙或杀毒软件拦截
+
+**问题**：安装或运行时被防火墙拦截
+
+**解决方法**：
+- 将 Node.js 和 npm 添加到防火墙白名单
+- 临时关闭杀毒软件进行安装
+- 检查企业网络策略是否允许访问 npm 仓库
 
 ***
