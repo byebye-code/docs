@@ -88,9 +88,10 @@ sandbox_mode = "workspace-write"
 
 [model_providers.88code]
 name = "88code"
-base_url = "https://www.88code.org/openai/v1"
+base_url = "https://88code.org/openai/v1"
 wire_api = "responses"
 env_key = "key88"
+requires_openai_auth = true
 
 [sandbox_workspace_write]
 network_access = true
