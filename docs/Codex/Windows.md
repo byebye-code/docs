@@ -216,7 +216,8 @@ network_access = true
 }
 ```
 把88_xxx替换为你的88code的key即可
-
+设置环境变量
+[System.Environment]::SetEnvironmentVariable("key88", "你的API密钥", [System.EnvironmentVariableTarget]::User)
 
 3. <font color="red">方法三</font>
 
@@ -227,7 +228,7 @@ network_access = true
 在 PowerShell 中运行以下命令：
 
 ```powershell
-$env:OPENAI_BASE_URL = "https://www.88code.org/openai/v1"
+$env:OPENAI_BASE_URL = "https://88code.org/openai/v1"
 $env:OPENAI_API_KEY = "你的API密钥"
 ```
 
@@ -239,7 +240,7 @@ $env:OPENAI_API_KEY = "你的API密钥"
 
 ```powershell
 # 设置用户级环境变量（永久生效）
-[System.Environment]::SetEnvironmentVariable("OPENAI_BASE_URL", "https://www.88code.org/openai/v1", [System.EnvironmentVariableTarget]::User)
+[System.Environment]::SetEnvironmentVariable("OPENAI_BASE_URL", "https://88code.org/openai/v1", [System.EnvironmentVariableTarget]::User)
 [System.Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "你的API密钥", [System.EnvironmentVariableTarget]::User)
 ```
 
