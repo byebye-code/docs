@@ -69,12 +69,11 @@ codex --version
 
 
 1. <font color="red">方法一</font>
-### 使用cc switch 配置(强强强烈推荐!!!) 
-查看 [cc switch](../FAQ/CC_SWITCH)
-
+### 
+使用使用教程网页右上角小白一键配置软件进行配置
 
 2. <font color="red">方法二</font>
-### 使用一劳永逸的方式配置 Codex 环境变量(强烈推荐!!!)
+### 使用编辑配置文件方式配置 Codex 环境变量(强烈推荐!!!)
 - 打开文件资源管理器，找到 `C:\Users\你的用户名\.codex` 文件夹（如果没有则创建）
 如图: ![目录](../img/image2.png)
 创建`config.toml`,用Notepad打开，输入以下内容：
