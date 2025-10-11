@@ -80,9 +80,8 @@ claude update
 
 ## (三) 配置 Claude Code
 
-### 方法一 (强强强烈推荐!!!) : 使用CC SWITCH进行配置
-使用cc switch 配置
-查看 [cc switch](../FAQ/CC_SWITCH)
+### 方法一 (强强强烈推荐!!!) : 
+使用教程网页右上角小白一键配置软件进行配置
 
 ### 方法二（推荐）：通过文件设置
 
