@@ -14,7 +14,7 @@
 
 ## 截图
 
-![ccline-88cc](img/image12.png)
+![ccline-88cc](../img/image12.png)
 
 状态栏显示：模型 | 目录 | Git 分支状态 | 上下文窗口 | 套餐：使用量/配额
 
@@ -325,7 +325,7 @@ cargo build --release
 
 ## 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。
+本项目采用 MIT 许可证。
 
 ## Star History
 
