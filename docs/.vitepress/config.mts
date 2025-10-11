@@ -83,6 +83,7 @@ export default defineConfig({
             { text: 'byebyecode体验教程', link: '/88-opensource/byebyecode' },
             { text: 'VSCode状态栏插件', link: '/88-opensource/vscode-extension' },
             { text: 'CCLine-88CC statuline简洁版', link: '/88-opensource/ccline-88cc' },
+             { text: '自动配置教程', link: '/88-opensource/88code-desktop' },
           ]
         }
       ],
