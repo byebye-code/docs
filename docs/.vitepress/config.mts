@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: '官网', link: 'https://www.88code.org/' },
       { text: '一键自动配置桌面端', link: 'https://github.com/byebye-code/88code-desktop' },
-      { text: '辅助工具', link: '/88-opensource/introduction' },
+      { text: '实用工具', link: '/88-opensource/introduction' },
     ],
      outline: {
       level: [1, 5], // 提取从 H2 到 H5 的标题
