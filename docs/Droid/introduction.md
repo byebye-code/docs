@@ -1,3 +1,19 @@
+# Droid 简介
+
+Droid 是 [factory.ai](https://factory.ai) 推出的 CLI 应用，可理解为 Cursor 的终端版。
+
+Droid 不仅提供官方服务，还支持用户接入自定义 API。
+
+**为什么要用 Droid**
+
+对比 Claude Code 和 Codex 这两个由模型提供商推出的客户端，Droid**并不一定**具有优势，但是由于不同的上下文和提示词调校，Droid 可能拥有不同的风格，在不同的场合具有更好的效果。
+
+与 Claude Code 相比，由于 Claude Code 的交互体验已相当完善，差异或许不大。
+
+在 Windows 环境下，由于 Codex 对终端工具的调用能力欠佳，Droid 交互体验会更好。
+
+具体表现需要用户自行体验，选择最适合的工具。
+
 # Droid 接入教程
 
 本文介绍如何在本地环境中安装 Factory CLI，并接入自定义的 Droid 模型配置。请按照以下步骤完成准备。
