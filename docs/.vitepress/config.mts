@@ -35,7 +35,7 @@ export default defineConfig({
           ]
         },
         {
-          text: 'ClaudeCode使用教程',
+          text: 'Claude Code使用教程',
           collapsed: false,
           items: [
             { text: 'Windows', link: '/ClaudeCode/Windows' },
@@ -55,6 +55,10 @@ export default defineConfig({
             { text: 'Vscode', link: '/Codex/Vscode' },
             { text: 'Jetbrains', link: '/Codex/Jetbrains' },
           ]
+        },
+        {
+          text: 'Droid使用教程',
+          link: '/Droid/introduction',
         },
         {
           text: 'Gemini使用教程',

@@ -20,6 +20,9 @@ hero:
       text: Gemini 教程
       link: /Gemini/Windows
     - theme: alt
+      text: Droid 教程
+      link: /Droid/introduction
+    - theme: alt
       text: FAQ
       link: /FAQ/faq
     - theme: alt
@@ -41,4 +44,3 @@ features:
   - title: 持续学习
     details: 从 AI 建议中学习新技术和最佳实践，不断提升技能
 ---
-
