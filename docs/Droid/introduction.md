@@ -88,6 +88,10 @@ curl -fsSL https://app.factory.ai/cli | sh
 
 等级可设置为 `none`, `low`, `medium`, `high`
 
+### 检查是否已开启思考模式
+
+![droid-check-thinking-enabled](../img/droid-check-thinking-enabled.png)
+
 > [!WARNING]
 > 此项会在模型切换后被重置，需要重新设置。
 >
