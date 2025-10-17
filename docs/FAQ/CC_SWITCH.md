@@ -63,19 +63,26 @@ GitHub repo: https://github.com/farion1231/cc-switch 在此🙏🙏🙏farion123
 ```
 ##### config.toml
 ```toml
-experimental_use_rmcp_client = true
 model_provider = "88code"
 model = "gpt-5-codex"
 model_reasoning_effort = "high"
 disable_response_storage = true
-sandbox_mode = "workspace-write"
-
-[sandbox_workspace_write]
-network_access = true
+sandbox_mode = "workspace-write" 
+experimental_use_rmcp_client = true
+# 内置工具开关
+include_plan_tool = true              # 计划/TODO 工具
+include_apply_patch_tool = true       # apply_patch 工具（结构化文件编辑）
+include_view_image_tool = true        # 视图图像工具（可选）
+# 实验性执行相关
+experimental_use_freeform_apply_patch = true    # 需要自由格式 apply_patch 时启用（可选）
+windows_wsl_setup_acknowledged = true
+# 内置 tools 表
+[tools]
+web_search = true                     # 开启内置 web_search 工具（可选）
 
 [model_providers.88code]
 name = "88code"
-base_url = "https://88code.org/openai/v1"
+base_url = "https://www.88code.org/openai/v1"
 wire_api = "responses"
 env_key = "key88"
 requires_openai_auth = true
