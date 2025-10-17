@@ -83,17 +83,19 @@ model = "gpt-5-codex"
 model_reasoning_effort = "high"
 disable_response_storage = true
 sandbox_mode = "workspace-write" 
-experimental_use_rmcp_client = true
-# 内置工具开关
-include_plan_tool = true              # 计划/TODO 工具
-include_apply_patch_tool = true       # apply_patch 工具（结构化文件编辑）
-include_view_image_tool = true        # 视图图像工具（可选）
-# 实验性执行相关
-experimental_use_freeform_apply_patch = true    # 需要自由格式 apply_patch 时启用（可选）
 windows_wsl_setup_acknowledged = true
-# 内置 tools 表
+[features]
+plan_tool = true
+apply_patch_freeform = true
+view_image_tool = true
+web_search_request = true
+unified_exec = false #会造成Windows不停弹窗，不要开
+streamable_shell = false
+rmcp_client = true
+# approve_all = true  # 谨慎开，但想偷懒的开，但也要承担被删库的风险
 [tools]
-web_search = true                     # 开启内置 web_search 工具（可选）
+web_search = true
+view_image = true
 
 [model_providers.88code]
 name = "88code"
