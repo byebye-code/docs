@@ -100,6 +100,14 @@ export default defineConfig({
     },
     search: {
       provider: 'local'
+    },
+    editLink: {
+      pattern: 'https://github.com/byebye-code/docs/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
     }
   }
 })
