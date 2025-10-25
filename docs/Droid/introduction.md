@@ -42,7 +42,17 @@ curl -fsSL https://app.factory.ai/cli | sh
 ```
 
 ## 三、配置 Droid 自定义模型
+1. <font color="red">方法一(强烈推荐!!!)</font>
+###
+同样需要登录 Droid 官方账号哦
 
+使用教程网页右上角一键自动配置命令行版进行配置
+
+or
+
+使用教程网页右上角小白一键配置软件（桌面版）进行配置
+
+2. <font color="red">方法二</font>
 1. 运行 `droid`，在 CLI 登录你的 Droid 官方账号。
 2. 根据操作系统定位配置目录：
    - Windows：`%USERPROFILE%\.factory\config.json`

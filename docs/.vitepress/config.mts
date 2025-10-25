@@ -10,6 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '官网', link: 'https://www.88code.org/' },
+      { text: '自动配置命令行版', link: '/FAQ/88code-auto-config' },
       { text: '一键自动配置桌面端', link: 'https://github.com/byebye-code/88code-desktop' },
       { text: '实用工具', link: '/88-opensource/introduction' },
     ],
@@ -44,7 +45,7 @@ export default defineConfig({
             { text: 'Vscode', link: '/ClaudeCode/Vscode' },
             { text: 'KiloRooCode', link: '/ClaudeCode/KiloRooCode' },
           ]
-        }, 
+        },
         {
           text: 'Codex使用教程',
           collapsed: true,
@@ -77,6 +78,8 @@ export default defineConfig({
           items: [
             { text: '常见问题解答', link: '/FAQ/faq' },
             { text: 'CC SWITCH使用教程', link: '/FAQ/CC_SWITCH' },
+            { text: '88自动配置命令行版', link: '/FAQ/88code-auto-config' },
+            { text: '88自动配置桌面版', link: '/FAQ/88code-Desktop' },
           ]
         },
         {
