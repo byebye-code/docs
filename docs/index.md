@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "88code文档站"
-  text: "稳定、优惠的企业级Claude Code/Codex 官方中转站"
-  tagline: 你最需要的优质中转
+  text: "人人用的起的平价Claude Code/Codex官方中转站"
+  tagline: 你最需要的平价中转
   actions:
     - theme: brand
       text: 88code站点介绍

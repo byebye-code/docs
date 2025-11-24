@@ -1,4 +1,4 @@
-```css:root {
+:root {
   /* Brand Colors - Shared */
   --vp-c-brand-1: #3b82f6;
   --vp-c-brand-2: #2563eb;
@@ -8,7 +8,7 @@
   /* Typography - Shared */
   --vp-font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  /* Light Mode Defaults (Clean, matching brand) */
+  /* Light Mode Defaults (Clean, DuckCoding inspired) */
   --vp-c-bg: #ffffff;
   --vp-c-bg-alt: #f8fafc;
   --vp-c-bg-elv: #ffffff;
@@ -19,11 +19,11 @@
   --vp-c-divider: #e2e8f0;
   --vp-c-gutter: #e2e8f0;
 
-  --vp-nav-bg-color: rgba(255, 255, 255, 0.8);
-  --vp-nav-screen-bg-color: #ffffff;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.7);
+  --vp-nav-screen-bg-color: rgba(255, 255, 255, 0.9);
   --vp-nav-height: 64px;
 
-  --vp-sidebar-bg-color: #f8fafc;
+  --vp-sidebar-bg-color: rgba(248, 250, 252, 0.8);
 
   /* Home Hero - Light */
   --vp-home-hero-name-color: transparent;
@@ -32,7 +32,7 @@
   --vp-home-hero-image-filter: blur(40px);
 }
 
-/* Dark Mode Overrides - The 88code Style */
+/* Dark Mode Overrides - 88code Style with Glassmorphism */
 .dark {
   --vp-c-bg: #0f172a;
   --vp-c-bg-alt: #1e293b;
@@ -44,68 +44,79 @@
   --vp-c-divider: #334155;
   --vp-c-gutter: #334155;
 
-  --vp-nav-bg-color: rgba(15, 23, 42, 0.8);
-  --vp-nav-screen-bg-color: #0f172a;
+  --vp-nav-bg-color: rgba(15, 23, 42, 0.7);
+  --vp-nav-screen-bg-color: rgba(15, 23, 42, 0.9);
 
-  --vp-sidebar-bg-color: #0f172a;
+  --vp-sidebar-bg-color: rgba(15, 23, 42, 0.8);
 }
 
 /* Button Overrides */
 .VPButton {
-  border-radius: 6px !important;
-  font-weight: 500 !important;
+  border-radius: 8px !important;
+  /* Slightly softer than 6px */
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
 }
 
 .VPButton.brand {
   background-color: var(--vp-c-brand-1);
   border-color: var(--vp-c-brand-1);
   color: #ffffff;
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
 }
 
 .VPButton.brand:hover {
   background-color: var(--vp-c-brand-2);
   border-color: var(--vp-c-brand-2);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.23);
 }
 
-/* Feature Cards - Adaptive */
+/* Feature Cards - Premium Feel */
 .VPFeature {
-  border-radius: 8px !important;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
   border: 1px solid var(--vp-c-border) !important;
   background-color: var(--vp-c-bg-alt) !important;
+  backdrop-filter: blur(10px);
+  /* If supported */
 }
 
 .VPFeature:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.15);
   border-color: var(--vp-c-brand-1) !important;
 }
 
 .dark .VPFeature:hover {
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.5);
+  background-color: #263347 !important;
+  /* Slightly lighter on hover in dark mode */
 }
 
-/* Navbar adjustments */
-.VPNavBar {
+/* Navbar & Sidebar Glassmorphism */
+.VPNavBar,
+.VPSidebar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--vp-c-border);
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  /* Thinner */
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--vp-c-bg);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--vp-c-border);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--vp-c-text-3);
 }
-
-```
