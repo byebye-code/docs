@@ -17,9 +17,6 @@ hero:
       text: Codex 教程
       link: /Codex/Windows
     - theme: alt
-      text: Gemini 教程
-      link: /Gemini/Windows
-    - theme: alt
       text: Droid 教程
       link: /Droid/introduction
     - theme: alt
