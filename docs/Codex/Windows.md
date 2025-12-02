@@ -47,7 +47,12 @@ npm --version
 
 打开 PowerShell 或 CMD，运行以下命令：
 ###### 全局安装 Codex
+使用88code专属codex,带状态栏,其他没动
+```powershell
+npm i -g @88code/codex --registry=https://registry.npmmirror.com
+```
 
+安装官方codex,原汁原味的体验
 ```powershell
 npm i -g @openai/codex --registry=https://registry.npmmirror.com
 ```
