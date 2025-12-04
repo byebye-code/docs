@@ -87,158 +87,48 @@ or
 如图: ![目录](../img/image2.png)
 创建`config.toml`,用Notepad打开，输入以下内容：
 ```toml
-model_provider = "88code"
-model = "gpt-5-codex"
-model_reasoning_effort = "high"
 disable_response_storage = true
-sandbox_mode = "workspace-write" 
+model = "gpt-5.1-codex-max"
+model_reasoning_effort = "high"
+model_provider = "88code"
+sandbox_mode = "workspace-write"
 windows_wsl_setup_acknowledged = true
+base_instructions = "Always prefer built-in tools (read_file, list_dir, grep_files) over shell commands for file operations."
+[experimental]
+use_freeform_apply_patch = true
+use_unified_exec_tool = true
+
 [features]
-plan_tool = true
 apply_patch_freeform = true
+ghost_commit = true
+plan_tool = true
+rmcp_client = true
+streamable_shell = false
+unified_exec = false
 view_image_tool = true
 web_search_request = true
-unified_exec = false #会造成Windows不停弹窗，不要开
-streamable_shell = false
-rmcp_client = true
-# approve_all = true  # 谨慎开，但想偷懒的开，但也要承担被删库的风险
-[tools]
-web_search = true
-view_image = true
+enable_experimental_windows_sandbox = true
+experimental_sandbox_command_assessment = true
+parallel = true
 
 [model_providers.88code]
-name = "88code"
 base_url = "https://www.88code.org/openai/v1"
-wire_api = "responses"
-env_key = "key88"
+name = "88code"
 requires_openai_auth = true
+wire_api = "responses"
 
 [sandbox_workspace_write]
 network_access = true
 
-# [mcp_servers.context7]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "bunx",
-#     "-y",
-#     "@upstash/context7-mcp",
-#     "--api-key",
-#     "ctx7sk-xxx",
-# ]
-# env = { SystemRoot="C:\\Windows" }
-# startup_timeout_ms = 20_000
 
-
-# [mcp_servers.fetch]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "uvx",
-#     "mcp-server-fetch"
-# ]
-# env = { SystemRoot="C:\\Windows" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.sequential-thinking-offical]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "npx",
-#     "-y",
-#     "@modelcontextprotocol/server-sequential-thinking"
-# ]
-# env = { SystemRoot="C:\\Windows" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.hyperbrowser]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "npx",
-#     "-y",
-#     "hyperbrowser-mcp"
-# ]
-# env = { SystemRoot="C:\\Windows",HYPERBROWSER_API_KEY="Yhb_xxx" }
-# startup_timeout_ms = 20_000
-
-
-# [mcp_servers.memory]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "npx",
-#     "-y",
-#     "@modelcontextprotocol/server-memory"
-# ]
-# env = { SystemRoot="C:\\Windows" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.ast-grep]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "uvx",
-#     "--from",
-# 	"git+https://github.com/ast-grep/ast-grep-mcp",
-# 	"ast-grep-server"
-# ]
-# env = { SystemRoot="C:\\Windows" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.everything-search]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "uvx",
-#     "mcp-server-everything-search",
-# ]
-# env = { SystemRoot="C:\\Windows",EVERYTHING_SDK_PATH="D:\\xxxx\\Everything-SDK\\dll\\Everything64.dll" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.tavily-mcp]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "npx",
-#     "-y",
-#     "tavily-mcp@0.2.4",
-# ]
-# env = { SystemRoot="C:\\Windows",TAVILY_API_KEY="ctx7sk-xxxx" }
-# startup_timeout_ms = 20_000
-
-
-# [mcp_servers.github]
-# command = "cmd"
-# args = [
-#     "/c",
-#     "npx",
-#     "-y",
-#     "@modelcontextprotocol/server-github",
-# ]
-# env = { SystemRoot="C:\\Windows",GITHUB_PERSONAL_ACCESS_TOKEN="github_pat_xxx" }
-# startup_timeout_ms = 20_000
-
-# [mcp_servers.mcpr]
-# command = "D:\\FNM_DIR\\aliases\\default\\mcpr-cli.cmd"
-# args = [
-#     "connect"
-# ]
-# env = { SystemRoot="C:\\Windows",MCPR_TOKEN="mcpr_xxx" }
-# startup_timeout_ms = 200000
 ```
-上的mcp被我注释了,有需要的自己去掉注释加上自己的apikey就可以使用,有使用mcp router的可以使用最后一个被注释的mcp即可
+
 - 创建 `auth.json` 文件，在文件添加以下内容：
 
 ```json
 {
   "OPENAI_API_KEY": "88_xxx"
 }
-```
-把88_xxx替换为你的88code的key即可
-设置环境变量
-```powershell
-[System.Environment]::SetEnvironmentVariable("key88", "你的API密钥", [System.EnvironmentVariableTarget]::User)
 ```
 
 3. <font color="red">方法三</font>
