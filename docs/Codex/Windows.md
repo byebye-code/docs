@@ -88,7 +88,7 @@ or
 创建`config.toml`,用Notepad打开，输入以下内容：
 ```toml
 disable_response_storage = true
-model = "gpt-5.1-codex-max"
+model = "gpt-5.2"
 model_reasoning_effort = "high"
 model_provider = "88code"
 sandbox_mode = "workspace-write"
@@ -112,7 +112,7 @@ experimental_sandbox_command_assessment = true
 parallel = true
 
 [model_providers.88code]
-base_url = "https://www.88code.org/openai/v1"
+base_url = "https://www.88code.ai/openai/v1"
 name = "88code"
 requires_openai_auth = true
 wire_api = "responses"
