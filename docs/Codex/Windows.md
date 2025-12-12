@@ -91,7 +91,7 @@ disable_response_storage = true
 model = "gpt-5.2"
 model_reasoning_effort = "high"
 model_provider = "88code"
-sandbox_mode = "workspace-write"
+sandbox_mode="danger-full-access"
 windows_wsl_setup_acknowledged = true
 base_instructions = "Always prefer built-in tools (read_file, list_dir, grep_files) over shell commands for file operations."
 [experimental]
