@@ -99,7 +99,7 @@ or
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "你的API密钥",
-    "ANTHROPIC_BASE_URL": "https://www.88code.org/api",
+    "ANTHROPIC_BASE_URL": "https://www.88code.ai/api",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
   },
   "permissions": {
@@ -118,7 +118,7 @@ or
 在 PowerShell 中运行以下命令：
 
 ```powershell
-$env:ANTHROPIC_BASE_URL = "https://www.88code.org/api"
+$env:ANTHROPIC_BASE_URL = "https://www.88code.ai/api"
 $env:ANTHROPIC_AUTH_TOKEN = "你的API密钥"
 ```
 
@@ -131,7 +131,7 @@ $env:ANTHROPIC_AUTH_TOKEN = "你的API密钥"
 
 ```powershell
 # 设置用户级环境变量（永久生效）
-[System.Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://www.88code.org/api", [System.EnvironmentVariableTarget]::User)
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://www.88code.ai/api", [System.EnvironmentVariableTarget]::User)
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "你的API密钥", [System.EnvironmentVariableTarget]::User)
 ```
 
